@@ -16,5 +16,12 @@ app.get('/about', (req, res) => {
   res.send('This is my about route..... ')
 })
 
+app.get('/test',(req,res)=> {
+  return res.json({
+    name : 'Sai Win Oo',
+    purpose : 'Testing for new up coming projects!'
+  });
+})
+
 // Export the Express API
 module.exports = app
